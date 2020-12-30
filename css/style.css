@@ -205,14 +205,32 @@ button:focus {
 .carousel_slide_bottom_pagination span{
     color: #000;
 }
-
+/*##################-----Slider Illustration----######################*/
+.illustration_inner{
+    white-space: nowrap;
+}
+.illustration_inner_item{
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    width: 118vw;
+    max-width: none;
+    display: inline-block;
+    animation: railIllustration 50s linear infinite;
+}
+@keyframes railIllustration{
+    0% {
+        transform: translateZ(0);
+    }
+    100% {
+        transform: translate3d(-100%,0,0);
+    }
+}
 
 /*##################-----Slider Text----######################*/
 .bg-text {
     top: 0px;
     left: 0px;
     font-size: 131px;
-    width: 200%;
     opacity: .2;
 }
 .rail-group-container{
@@ -221,8 +239,18 @@ button:focus {
     display: inline-flex;
     width: auto;
 }
+.rail-group-container .rail-track
+{
+  
+}
 .rail-group-container .rail-item{
     font-size: 7rem;
+    white-space: nowrap;
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+    max-width: none;
+    display: inline-block;
+    animation: railIllustration 50s linear infinite;
 }
 
 
@@ -424,23 +452,3 @@ footer{
     border-color: #1f1f1f;
 }
 
-/*##################-----Slider Illustration----######################*/
-.illustration_inner{
-    white-space: nowrap;
-}
-.illustration_inner_item{
-    -webkit-animation-play-state: running;
-    animation-play-state: running;
-    width: 118vw;
-    max-width: none;
-    display: inline-block;
-    animation: railIllustration 50s linear infinite;
-}
-@keyframes railIllustration{
-    0% {
-        transform: translateZ(0);
-    }
-    100% {
-        transform: translate3d(-100%,0,0);
-    }
-}
