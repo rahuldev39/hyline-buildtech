@@ -1,6 +1,7 @@
 
 body{
     background-color: #1f1f1f;
+    
 }
 .object-fit-cover{
     object-fit: cover;
@@ -24,6 +25,53 @@ body{
 .font-weight-light{
     font-weight: 300 !important;
 }
+/*##################-----Navigation----######################*/
+.loader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #0e0e0e;
+    z-index: 1000;
+}
+.loader-inner{
+	width:400px;
+	height:400px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.blob-1,.blob-2{
+	width:70px;
+	height:70px;
+	position:absolute;
+	background:#fff;
+	border-radius:50%;
+	top:50%;left:50%;
+	transform:translate(-50%,-50%);
+}
+.blob-1{
+	left:20%;
+	animation:osc-l 2.5s ease infinite;
+}
+.blob-2{
+	left:80%;
+	animation:osc-r 2.5s ease infinite;
+	background:#0ff;
+}
+@keyframes osc-l{
+	0%{left:20%;}
+	50%{left:50%;}
+	100%{left:20%;}
+}
+@keyframes osc-r{
+	0%{left:80%;}
+	50%{left:50%;}
+	100%{left:80%;}
+}
+
 /*##################-----Navigation----######################*/
 
 .navbar {
@@ -239,10 +287,7 @@ button:focus {
     display: inline-flex;
     width: auto;
 }
-.rail-group-container .rail-track
-{
-  
-}
+
 .rail-group-container .rail-item{
     font-size: 7rem;
     white-space: nowrap;

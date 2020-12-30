@@ -22,6 +22,12 @@
 </head>
 
 <body>
+  <div class="loader">
+    <div class = "loader-inner">
+      <div class = "blob-1"></div>
+      <div class = "blob-2"></div>
+    </div>
+  </div>
   <div data-scroll-container>
     <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute w-100" data-scroll-section>
@@ -310,7 +316,7 @@
             <div class="circle" data-scroll data-scroll-speed="1"></div>
         </div>
 
-        <div class="table-benefits" data-scroll data-scroll-speed="2"> 
+        <div class="table-benefits" > 
           <div class="table-benefits_row d-flex flex-column flex-md-row justify-content-md-between bg-white p-5 align-items-md-center" >
             <div class="benefits-img text-center text-md-left mb-5 mb-md-0">
               <img src="./images/economic.png" width="150" alt="">
@@ -485,7 +491,6 @@ elit, sed diam nonummy nibh euismod
           </div>
       </div>
     </div>
-
     <div class="copy-right-container text-center text-white  ">
       <div class="copy-right-container-inner d-flex align-items-end justify-content-center py-3" >
         <span>Copyright Hyline Buildtech</span>
@@ -493,12 +498,15 @@ elit, sed diam nonummy nibh euismod
       
     </div>
   </footer>
+  
   </div>
   
 
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script nomodule src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/7.6.0/polyfill.min.js" crossorigin="anonymous"></script>
+<script nomodule src="https://polyfill.io/v3/polyfill.min.js?features=Object.assign%2CElement.prototype.append%2CNodeList.prototype.forEach%2CCustomEvent%2Csmoothscroll" crossorigin="anonymous"></script>
   <script src="vendor/owl/owl.carousel.min.js"></script>
   <script src="vendor/locomotive/locomotive.js"></script>
   <script src="./js/app.js"></script>

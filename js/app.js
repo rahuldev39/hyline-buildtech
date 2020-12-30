@@ -1,8 +1,15 @@
+$(window).on('load', function() {
+	$('.loader').fadeOut();
+	$('.loader-inner').delay(350).fadeOut('slow');
+});
+
+
 $('.owl-carousel').owlCarousel({
     center: true,
     items:1,
     loop:true,
-    
+    nav:false,
+    dots:false,
     responsive:{
         500:{
             margin:10,
